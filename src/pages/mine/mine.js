@@ -1,31 +1,30 @@
-import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
-import { WebView } from '@tarojs/components'
-import './mine.scss'
+import Taro, { Component } from "@tarojs/taro";
+import { View, Text } from "@tarojs/components";
+import { Map, Image } from "@tarojs/components";
+import BottomTabBar from "../../components/TabBar/BottomTabBar";
+import "./mine.scss";
+import namedPng from "../../assets/images/001.jpg";
 
 export default class Mine extends Component {
+  config = {
+    navigationBarTitleText: "我的"
+  };
 
-    config = {
-        navigationBarTitleText: '我的'
-    }
+  componentWillMount() {}
 
-    componentWillMount() { }
+  componentDidMount() {}
 
-    componentDidMount() { }
+  componentWillUnmount() {}
 
-    componentWillUnmount() { }
+  componentDidShow() {}
 
-    componentDidShow() { }
+  componentDidHide() {}
 
-    componentDidHide() { }
-
-    render() {
-        return (<WebView src='http://www.wuhuan.me' />
-            // <View className='index'>
-            //     <Text>欢迎来到我的页面！</Text>
-                
-            // </View>
-        )
-    }
+  render() {
+    return (
+      <View className='mine'>
+        <Text>欢迎来到我的页面！</Text>
+      </View>
+    );
+  }
 }
-
